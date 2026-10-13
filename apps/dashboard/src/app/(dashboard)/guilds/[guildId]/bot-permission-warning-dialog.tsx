@@ -28,10 +28,10 @@ export function BotPermissionWarningDialog({ guildId }: BotPermissionWarningDial
         <DialogTrigger asChild>
           <SidebarMenuButton
             tooltip='Botの権限が不足しています'
-            className='text-destructive hover:text-destructive'
+            className='text-destructive hover:text-destructive active:text-destructive'
           >
             <TriangleAlertIcon />
-            <span>権限が不足しています</span>
+            権限が不足しています
           </SidebarMenuButton>
         </DialogTrigger>
       </SidebarMenuItem>
@@ -48,7 +48,7 @@ export function BotPermissionWarningDialog({ guildId }: BotPermissionWarningDial
         </p>
         <DialogFooter>
           <Button asChild>
-            <Link href={inviteUrl} target='_blank' rel='noopener noreferrer'>
+            <Link href={inviteUrl}>
               更新
               <ExternalLinkIcon className='size-4' />
             </Link>
